@@ -1,0 +1,17 @@
+server:
+  port: 1001
+spring:
+  application:
+    name: consumer
+dubbo:
+  application:
+    name: dubbo_consumer
+  registry:
+    address: zookeeper://192.168.226.128:2181
+    protocol: zookeeper
+    timeout: 20000
+    version: 1.0.0
+  consumer:
+    check: true
+    retries: 2
+
