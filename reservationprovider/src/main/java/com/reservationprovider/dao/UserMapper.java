@@ -1,8 +1,8 @@
-package com.dao;
+package com.reservationprovider.dao;
+
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.pojo.User;
-import org.apache.ibatis.annotations.Mapper;
+import com.reservationaip.pojo.User;
 
 import java.util.List;
 

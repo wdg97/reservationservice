@@ -1,9 +1,9 @@
-package com.service.Impl;
+package com.reservationprovider.service.Impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.dao.UserMapper;
-import com.pojo.User;
-import com.service.IUserService;
+import com.reservationaip.pojo.User;
+import com.reservationprovider.dao.UserMapper;
+import com.reservationprovider.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

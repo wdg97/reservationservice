@@ -1,10 +1,10 @@
-package com.dubboServiceImpl;
+package com.reservationprovider.dubboserviceimpl;
 
-import com.dao.UserMapper;
-import com.dubbo.service.IDubboUserService;
-import com.pojo.User;
-import com.service.IUserService;
+import com.reservationprovider.dao.UserMapper;
+import com.reservationaip.pojo.User;
+import com.reservationaip.service.IDubboUserService;
 import org.apache.dubbo.config.annotation.DubboService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -16,11 +16,14 @@ import java.util.List;
  */
 @DubboService
 public class DubboUserServiceImpl implements IDubboUserService {
+
+
     @Autowired
     private UserMapper userMapper;
 
     @Override
     public List<User> qryAllUser() {
+        System.out.println("服务器1.........");
         return userMapper.qryAllUser();
     }
 }

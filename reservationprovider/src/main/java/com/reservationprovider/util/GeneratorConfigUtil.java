@@ -1,4 +1,4 @@
-package com.util;
+package com.reservationprovider.util;
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;

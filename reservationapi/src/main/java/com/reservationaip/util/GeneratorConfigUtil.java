@@ -1,4 +1,4 @@
-package com.util;
+package com.reservationaip.util;
 
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -24,7 +24,7 @@ public class GeneratorConfigUtil {
     private static final String JDBC_PASSOWRD = "root";
 
     // 包名和模块名
-    private static final String PACKAGE_NAME = "com.pojo";
+    private static final String PACKAGE_NAME = "com.reservationprovider.util.pojo";
     private static final String MODULE_NAME = "user";
 
     // 表名，多个表使用英文逗号分割

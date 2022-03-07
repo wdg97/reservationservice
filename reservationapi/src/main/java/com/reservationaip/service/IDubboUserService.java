@@ -1,6 +1,7 @@
-package com.dubbo.service;
+package com.reservationaip.service;
 
-import com.pojo.User;
+
+import com.reservationaip.pojo.User;
 
 import java.util.List;
 

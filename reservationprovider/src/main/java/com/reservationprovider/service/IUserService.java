@@ -1,7 +1,7 @@
-package com.service;
+package com.reservationprovider.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pojo.User;
+import com.reservationaip.pojo.User;
 
 import java.util.List;
 

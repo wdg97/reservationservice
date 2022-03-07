@@ -1,14 +1,15 @@
-package com.service.reservationconsumer.com.service.controller;
+package com.reservationconsumer.controller;
 
-import com.dubbo.service.IDubboUserService;
-import com.pojo.User;
+import com.reservationaip.pojo.User;
+import com.reservationaip.service.IDubboUserService;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.dubbo.rpc.cluster.loadbalance.RandomLoadBalance;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+
 
 /**
  * @Description
@@ -18,11 +19,14 @@ import java.util.List;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-
-    @DubboReference
+    /**
+     * 负载均衡是随机的
+     */
+    @DubboReference(loadbalance = RandomLoadBalance.NAME)
     private IDubboUserService dubboUserService;
+
     @GetMapping("/qryAllUser")
-    public List<User> qryAllUser(){
+    public List<User> qryAllUser() {
         return dubboUserService.qryAllUser();
     }
 }

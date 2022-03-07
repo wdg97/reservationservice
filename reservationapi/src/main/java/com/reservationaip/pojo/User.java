@@ -1,4 +1,4 @@
-package com.pojo;
+package com.reservationaip.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;

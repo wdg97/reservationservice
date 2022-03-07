@@ -1,8 +1,8 @@
 server:
-  port: 1000
+  port: 2000
 spring:
   application:
-    name: provider
+    name: provider-01
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test_local?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
@@ -19,7 +19,7 @@ mybatis-plus:
       logic-not-delete-value: 0
 dubbo:
   application:
-    name: dubbo_provider #dubbo的引用名称，必须配置，是放在注册中心的标志
+    name: dubbo_provider-01 #dubbo的引用名称，必须配置，是放在注册中心的标志
   registry: #注册中心的地址和协议
     address: zookeeper://192.168.226.128:2181
     protocol: zookeeper
@@ -27,7 +27,7 @@ dubbo:
     timeout: 20000
   protocol: #dubbo连接的协议名和端口
     name: dubbo
-    port: 20880
+    port: 20881
   config-center:
     timeout: 20000 #连接超时的设置
 
