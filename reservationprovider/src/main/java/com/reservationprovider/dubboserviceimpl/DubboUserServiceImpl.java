@@ -4,7 +4,6 @@ import com.reservationprovider.dao.UserMapper;
 import com.reservationaip.pojo.User;
 import com.reservationaip.service.IDubboUserService;
 import org.apache.dubbo.config.annotation.DubboService;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

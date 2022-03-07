@@ -17,6 +17,7 @@ mybatis-plus:
     db-config:
       logic-delete-value: 1
       logic-not-delete-value: 0
+#  dubbo的服务既可以是消费者也可以值提供者，消费者不需要配置protocol这个项目，其他的都一样
 dubbo:
   application:
     name: dubbo_provider #dubbo的引用名称，必须配置，是放在注册中心的标志
@@ -30,4 +31,6 @@ dubbo:
     port: 20880
   config-center:
     timeout: 20000 #连接超时的设置
+  consumer:
+    check: false
 

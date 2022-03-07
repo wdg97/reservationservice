@@ -14,4 +14,9 @@ dubbo:
   consumer:
     check: true
     retries: 2
+  protocol:
+    port: 20882
+    name: dubbo
+  config-center:
+    timeout: 20000
 
