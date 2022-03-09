@@ -19,6 +19,6 @@ public class DubboInfoServiceImpl implements IDubboInfoService {
         user.setId(99);
         user.setName("wddd");
 
-        return user;
+        return null;
     }
 }
