@@ -25,12 +25,22 @@ dubbo:
     address: zookeeper://192.168.226.128:2181
     protocol: zookeeper
     version: 1.0.0
-    timeout: 20000
+    timeout: 30000
   protocol: #dubbo连接的协议名和端口
     name: dubbo
     port: 20880
   config-center:
-    timeout: 20000 #连接超时的设置
+    timeout: 30000 #连接超时的设置
   consumer:
     check: false
+app:
+  id: testwdg
+apollo:
+  meta: http://106.54.227.205:8080
+  #cluster: myCluster
+  cacheDir: D:\\opt\\testDir
+  bootstrap:
+    enable: true
+    namespaces: application
 
+env: DEV
